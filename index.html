@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Dashboard</title>
+    <link rel="stylsheet" href="style.css">
+</head>
+<body>
+    <div class="title container" style="background-color: #421879; color: rgb(205, 185, 238);">
+        <h1><strong>Weather Dashboard</strong></h1>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="search-for-city">
+                <h4 class="pt-1">Search for a City</h4>
+                <div class="input-group">
+                    <input type="text" class="type-here" id="search-city" aria-label="City Search" aria-describedby="search-button">
+                    <div class="input-group-append">
+                        <button class="btn" id="search-button">Search</button>
+                    </div>
+                </div>
+                <button class="btn btn-primary" type="button" id="clear-history">Clear history</button>
+                <ul class="list-group"></ul>
+            </div>
+            <div class="col-sm-8">
+                <div class="col-sm-12" id="current-weather">
+                    <h3 class="city-name bolder" id="current-city"></h3>
+                    <p>Temperature:<span class="current" id="temperature"></span></p>
+                    <p>Humidity:<span class="current" id="humidity"></span></p>
+                    <p>Wind Speed:<span class="current" id="wind-speed"></span></p>
+                </div>
+            </div>
+            <div class="col-sm-12" id="future-weather">
+                <h3>5-Day Forcast:</h3>
+                <div class="row text-light">
+                    <div class="forecast"  style="border-style: solid;">
+                        <p id="fDate0"></p>
+                        <p id="fImg0"></p>
+                        <p>Temp:<span id="fTemp0"></span></p>
+                        <p>Humidity:<span id="fHumidity0"></span></p>
+                        <p>Wind Speed:<span id="fWindSpeed0"></span></p>
+                    </div>
+                    <div class="forecast" style="border-style: solid;">
+
+                        <p id="fDate1"></p>
+                        <p id="fImg1"></p>
+                        <p>Temp:<span id="fTemp1"></span></p>
+                        <p>Humidity:<span id="fHumidity1"></span></p>
+                        <p>Wind Speed:<span id="fWindSpeed1"></span></p>
+                    </div>
+                    <div class="forecast" style="border-style: solid;">
+                        <p id="fDate2"></p>
+                        <p id="fImg2"></p>
+                        <p>Temp:<span id="fTemp2"></span></p>
+                        <p>Humidity:<span id="fHumidity2"></span></p>
+                        <p>Wind Speed:<span id="fWindSpeed2"></span></p>
+                    </div>
+                    <div class="forecast" style="border-style: solid;">
+                        <p id="fDate3"></p>
+                        <p id="fImg3"></p>
+                        <p>Temp:<span id="fTemp3"></span></p>
+                        <p>Humidity:<span id="fHumidity3"></span></p>
+                        <p>Wind Speed:<span id="fWindSpeed3"></span></p>
+                    </div>
+                    <div class="forecast" style="border-style: solid;">
+                        <p id="fDate4"></p>
+                        <p id="fImg4"></p>
+                        <p>Temp:<span id="fTemp4"></span></p>
+                        <p>Humidity:<span id="fHumidity4"></span></p>
+                        <p>Wind Speed:<span id="fWindSpeed4"></span></p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    </div>
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
