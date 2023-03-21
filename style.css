@@ -1,0 +1,21 @@
+*{
+    box-sizing: border-box;
+    display: inline-block;
+}
+
+body{
+    font-size: 16px;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+}
+
+h3{
+    font-weight: bold;
+}
+
+
+li:hover{
+    background-color: #d8cce6;
+}
+
+
+    
